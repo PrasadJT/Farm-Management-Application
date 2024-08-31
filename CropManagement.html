@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management System</title>
+    <!--styles-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </span>
+                        <span class="title">SL FARMER</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="rose-outline"></ion-icon>
+                        </span>
+                        <span class="title">Crop Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inventory.html">
+                        <span class="icon">
+                            <ion-icon name="file-tray-full-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soil-monitor.html">
+                        <span class="icon">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </span>
+                        <span class="title">Soil Monitoring</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- =================Main=================== -->
+         <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ==============Crop Details List============= -->
+            <div class="details">
+                <div class="recentCrops">
+                    <div class="cardHeader">
+                        <h2>Recent Crops</h2>
+                        <a href="#" class="btn ">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Year</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Maize</td>
+                                <td>$1200</td>
+                                <td>2012</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Rice</td>
+                                <td>$110</td>
+                                <td>2013</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Wheat</td>
+                                <td>$1200</td>
+                                <td>2010</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Potato</td>
+                                <td>$620</td>
+                                <td>2014</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Mung Bean</td>
+                                <td>$210</td>
+                                <td>2020</td>
+                                <td><span class="status Return">Return</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Manioc</td>
+                                <td>$186</td>
+                                <td>2018</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>chilli</td>
+                                <td>$1120</td>
+                                <td>2023</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Onion</td>
+                                <td>$800</td>
+                                <td>2019</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            <!-------------Main Content--------------->
+        <section id="dashboard">
+            <h1>Welcome to SL Farmer</h1>
+            <p>Farmers are the backbone of our society. Without them, we wouldn’t have food on our tables.</p>
+        </section>
+
+        <section id="crop-management">
+            <h1>Crop Management</h1>
+            <form>
+                <label for="crop-type">Select Crop:</label>
+                <select id="crop-type">
+                    <option value="wheat">Wheat</option>
+                    <option value="corn">Corn</option>
+                    <option value="soybeans">Soybeans</option>
+                </select>
+                <button onclick="addCrop()">Add Crop</button>
+            </form>
+            <div id="crop-list"></div>
+        </section>
+
+    <!-- ==============Scripts============= -->
+    <script src="js/main.js"></script>
+
+    <!-- ============Charts JS=============== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="js/chartsJS.js"></script>
+    
+    <!-- =============ionicons============ -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

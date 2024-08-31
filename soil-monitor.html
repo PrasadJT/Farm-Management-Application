@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management System</title>
+    <!--styles-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </span>
+                        <span class="title">SL FARMER</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="CropManagement.html">
+                        <span class="icon">
+                            <ion-icon name="rose-outline"></ion-icon>
+                        </span>
+                        <span class="title">Crop Management</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inventory.html">
+                        <span class="icon">
+                            <ion-icon name="file-tray-full-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inventory</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soil-monitor.html">
+                        <span class="icon">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </span>
+                        <span class="title">Soil Monitoring</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- =================Main=================== -->
+         <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="recentCrops">
+                <div class="cardHeader">
+                    <section id="soil-monitoring">
+                        <h1>Soil Monitoring</h1>
+                        <p>Monitor soil moisture levels and pH balance.</p>
+                        <div id="soil-data"></div>
+                    </section>
+                </div>
+             </div>
+         
+    <!-- ==============Scripts============= -->
+    <script src="js/main.js"></script>
+
+    <!-- ============Charts JS=============== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="js/chartsJS.js"></script>
+    
+
+    <!-- =============ionicons============ -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/soil-monitoring.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

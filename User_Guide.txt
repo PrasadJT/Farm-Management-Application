@@ -1,0 +1,56 @@
+=====================================SL Farmer User Guide=================================
+
+1.Navigation:
+	The navigation menu at the top provides access to various features of the system:-
+		Dashboard
+		Crop Management
+		Inventory
+		Soil Monitoring
+		
+	Click on the menu items to navigate between different sections of the website.
+
+2.Main Sections:
+
+	Dashboard:
+		Displays overview information about the farm.
+		Provides quick access to main functions.
+
+	Crop Management:
+		Allows adding new crops
+		Lists existing crops with details.
+
+	Inventory:
+		Manages inventory of seeds, fertilizers, equipment, etc.
+		Adds new items to inventory.
+
+	Soil Monitoring:
+		Monitors soil moisture levels and pH balance.
+		Displays current soil data.
+
+3.Key Features:
+	Adding New Items:
+		Crop Management: Add new crops
+
+	Inventory: 
+		Add new items (seeds, fertilizers, equipment)
+	
+	Data Display:
+		Recent Crops table showing crop names, prices, years, and status
+		Charts displaying farm statistics.
+	
+	Search Functionality:
+		Search bar in the top for searching across the site
+	
+	User Profile:
+		User image displayed in the top right corner.
+	
+
+4.Usage:
+	Regularly update crop and inventory records.
+	Monitor soil health regularly.
+	Use the search feature to quickly find specific information.
+	Utilize the charts to track farm performance.
+
+
+===============================Thank you==================================================
+
